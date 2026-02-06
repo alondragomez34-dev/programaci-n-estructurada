@@ -2,20 +2,26 @@
 using namespace std;
 
 int main() {
-    int num1, num2, num3, suma;
+    int numero1, numero2, numero3;
+    int producto, suma;
 
     cout << "Ingresa el primer numero: ";
-    cin >> num1;
+    cin >> numero1;
 
     cout << "Ingresa el segundo numero: ";
-    cin >> num2;
+    cin >> numero2;
 
     cout << "Ingresa el tercer numero: ";
-    cin >> num3;
+    cin >> numero3;
 
-    suma = num1 + num2 + num3;
-
-    cout << "La sumatoria es: " << suma << endl;
+    if (numero1 > 0) {
+        producto = numero1 * numero2 * numero3;
+        cout << "El producto de los numeros es: " << producto << endl;
+    } else {
+        suma = numero1 + numero2 + numero3;
+        cout << "La suma de los numeros es: " << suma << endl;
+    }
 
     return 0;
 }
+
